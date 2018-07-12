@@ -298,8 +298,11 @@ public:
         // create the scene.
         _scene = Scene::create();
 
-        // create an ortho camera
-        Camera* camera = Camera::createOrthographic(getWidth(), getHeight(), getAspectRatio(), -100.0, 100.0);
+        // create an ortho camera with real game dimensions
+        // adjust game resolution in game.config file
+        const int GAME_WIDTH = 288;
+        const int GAME_HEIGHT = 512;
+        Camera* camera = Camera::createOrthographic(GAME_WIDTH, GAME_HEIGHT, getAspectRatio(), -100.0, 100.0);
         Node* cameraNode = _scene->addNode("camera");
         cameraNode->setCamera(camera);
         _scene->setActiveCamera(camera);
