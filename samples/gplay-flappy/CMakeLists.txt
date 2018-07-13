@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-project(new-sample)
+project(gplay-flappy)
 
 set(GAME_NAME ${PROJECT_NAME})
 if(EMSCRIPTEN)
@@ -7,7 +7,6 @@ if(EMSCRIPTEN)
 endif()
 
 set(GAME_SRC
-    src/main.h
     src/main.cpp
 )
 

@@ -7,5 +7,5 @@ This sample is a demonstration and a attempt to recreate the original FlappyBird
 To build it, unzip/drop the repository into your GplayEngine folder, open project flappy.pro with QtCreator and build.
 
 # Screenshot
-<img src="https://i.imgur.com/KyRqyIP.png" width="50%" height="%">
+<img src="https://i.imgur.com/KyRqyIP.png" width="30%" height="%">
 
